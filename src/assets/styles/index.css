@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -25,7 +29,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -66,4 +69,39 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.header {
+  height: 100px;
+  width: 100%;
+  background-color: aquamarine;
+}
+
+.carousel {
+  height: 200px;
+  width: 100%;
+  background-color: red;
+}
+
+.body-container{
+  height: 500px;
+  width: 100%;
+  background-color: blue;
+}
+
+.main {
+  width: 100%;
+}
+
+.wrapper {
+  /* width: 150px; */
+  border: 3px solid blue;
+}
+
+.navtitle-sm {
+  font-size: 0.75rem;
+}
+
+.navtitle-md {
+  font-size: 1rem;
 }
