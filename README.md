@@ -1,1 +1,2 @@
-# amazon-clone
+# dissected website
+# try to copy
