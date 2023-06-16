@@ -36,7 +36,7 @@ function Header() {
           <a href="#" className="text-green-800 hover:text-pink ml-4 pl-10">
             DISCORD
           </a>
-          <a href="#" className="text-green-800 hover:text-pink ml-4 pl-5">
+          <a href="https://mangasect.com/home" className="text-green-800 hover:text-pink ml-4 pl-5">
             MANGA SECT
           </a>
           <a href="#" className="text-green-800 hover:text-pink ml-4 pl-5">
