@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        pink: "#e622a5",          //not working 
+        pink: "#e622a5",
         
       },
     },
