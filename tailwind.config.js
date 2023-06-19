@@ -6,10 +6,6 @@ export default {
       colors: {
         pink: "#e622a5",          //not working 
         
-      },height: {
-
-        lebron: "500px",          //not working 
-        
       },
     },
   },
