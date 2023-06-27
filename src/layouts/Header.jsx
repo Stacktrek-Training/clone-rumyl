@@ -1,9 +1,12 @@
 import { Navbar } from "flowbite-react";
 import Logo from "../components/Logo";
 import "../assets/styles/index.css";
+import { Outlet, Link } from "react-router-dom";
+
 
 function Header() {
   return (
+    <>
     <header className="">
       <Navbar fluid className="!bg-pink">
         <Navbar.Brand href="https://manhuaplus.com/">
@@ -33,33 +36,37 @@ function Header() {
       <div className="items-left bg-white-100 p-2">
         {/* Navigation */}
         <div className="ml-auto p-4 pl-11">
-          <a href="#" className="text-green-800 hover:text-pink ml-4 pl-10">
-            DISCORD
-          </a>
-          <a href="https://mangasect.com/home" className="text-green-800 hover:text-pink ml-4 pl-5">
+        <Link to = "Manhua" className="text-green-800 hover:text-pink ml-4 pl-10">
+            MANHUA
+          </Link>
+          <Link to="MangaSect" className="text-green-800 hover:text-pink ml-4 pl-5">
             MANGA SECT
-          </a>
-          <a href="#" className="text-green-800 hover:text-pink ml-4 pl-5">
-            PATEON
-          </a>
-          <a href="#" className="text-green-800 hover:text-pink ml-4 pl-5">
+         </Link>
+          <Link to="Patreon" className="text-green-800 hover:text-pink ml-4 pl-5">
+            PATREON
+         </Link>
+          <Link to="Paypal" className="text-green-800 hover:text-pink ml-4 pl-5">
             PAYPAL
-          </a>
-          <a href="#" className="text-green-800 hover:text-pink ml-4 pl-5">
+         </Link>
+          <Link to="More" className="text-green-800 hover:text-pink ml-4 pl-5">
             MORE
             
-          </a>
-          <a href="#" className="text-black hover:text-pink float-right pr-5">
+         </Link>
+          <Link to="#" className="text-black hover:text-pink float-right pr-5">
           <button type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">SIGN UP</button>
-          </a>
-          <a href="#" className="text-black hover:text-pink float-right">
+         </Link>
+          <Link to="#" className="text-black hover:text-pink float-right">
           <button type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">SIGN IN</button>
-          </a>
+         </Link>
         </div>
         
         </div>
         
     </header>
+    <div id="detail">
+         <Outlet />
+    </div>
+    </>
   );
 }
 

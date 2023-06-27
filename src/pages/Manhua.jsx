@@ -10,6 +10,13 @@ import c7 from "../assets/images/c7.jpg";
 import c8 from "../assets/images/c8.jpg";
 import c9 from "../assets/images/c9.png";
 import c10 from "../assets/images/c10.jpg";
+import Page from "../layouts/Pagination";
+import Footer from "../layouts/Footer";
+import "../assets/styles/index.css";
+import DefaultCarousel from "../components/DefaultCarousel";
+
+
+
 
 const cardItems = [
   {
@@ -76,16 +83,19 @@ const cardItems = [
 ];
 
 
-function Body() {
+function Manhua() {
   return (
-
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+    <>
+      <main className="container mx-auto">
+        <DefaultCarousel />
+        <br/>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
       
-      {cardItems.map( ({title, image, button, link}) => (
+        {cardItems.map( ({title, image, button, link}) => (
         <Card
         imgAlt="Meaningful alt text for an image that is not purely decorative"
-        imgSrc={image}
-      >
+        imgSrc={image}>
+
         <h5 className="text-1xl font-bold text-center text-gray-900 dark:text-white">
           <p>
             {title}
@@ -99,8 +109,15 @@ function Body() {
       </Card>
       ))}
 
-    </div>
+     </div>
+    </main>
+      <Page/>
+
+      <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+        
+      <Footer/>
+      </>
   );
 }
 
-export default Body;
+export default Manhua;

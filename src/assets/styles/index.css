@@ -105,3 +105,11 @@ button:focus-visible {
 .navtitle-md {
   font-size: 1rem;
 }
+
+#error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
